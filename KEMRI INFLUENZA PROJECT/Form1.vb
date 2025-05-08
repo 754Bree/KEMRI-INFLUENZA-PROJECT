@@ -124,4 +124,8 @@
     Private Sub Label30_Click(sender As Object, e As EventArgs) Handles Label30.Click
 
     End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+
+    End Sub
 End Class

@@ -31,6 +31,7 @@ Partial Class Form1
         TabPage2 = New TabPage()
         Button6 = New Button()
         GroupBox1 = New GroupBox()
+        Label30 = New Label()
         Label6 = New Label()
         Label5 = New Label()
         Label4 = New Label()
@@ -103,7 +104,8 @@ Partial Class Form1
         Label25 = New Label()
         Button11 = New Button()
         Button10 = New Button()
-        Label30 = New Label()
+        LinkLabel1 = New LinkLabel()
+        LinkLabel2 = New LinkLabel()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         TabPage2.SuspendLayout()
@@ -136,6 +138,8 @@ Partial Class Form1
         ' TabPage1
         ' 
         TabPage1.BackColor = SystemColors.MenuHighlight
+        TabPage1.Controls.Add(LinkLabel2)
+        TabPage1.Controls.Add(LinkLabel1)
         TabPage1.Controls.Add(DateTimePicker1)
         TabPage1.Controls.Add(Button1)
         TabPage1.Controls.Add(Label2)
@@ -227,6 +231,15 @@ Partial Class Form1
         GroupBox1.TabIndex = 4
         GroupBox1.TabStop = False
         GroupBox1.Text = "About the program"
+        ' 
+        ' Label30
+        ' 
+        Label30.AutoSize = True
+        Label30.Location = New Point(29, 78)
+        Label30.Name = "Label30"
+        Label30.Size = New Size(89, 30)
+        Label30.TabIndex = 4
+        Label30.Text = "Label30"
         ' 
         ' Label6
         ' 
@@ -961,14 +974,29 @@ Partial Class Form1
         Button10.Text = "Back"
         Button10.UseVisualStyleBackColor = True
         ' 
-        ' Label30
+        ' LinkLabel1
         ' 
-        Label30.AutoSize = True
-        Label30.Location = New Point(29, 78)
-        Label30.Name = "Label30"
-        Label30.Size = New Size(89, 30)
-        Label30.TabIndex = 4
-        Label30.Text = "Label30"
+        LinkLabel1.AutoSize = True
+        LinkLabel1.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold)
+        LinkLabel1.LinkColor = Color.White
+        LinkLabel1.Location = New Point(396, 367)
+        LinkLabel1.Name = "LinkLabel1"
+        LinkLabel1.Size = New Size(57, 20)
+        LinkLabel1.TabIndex = 4
+        LinkLabel1.TabStop = True
+        LinkLabel1.Text = "Signup"
+        ' 
+        ' LinkLabel2
+        ' 
+        LinkLabel2.AutoSize = True
+        LinkLabel2.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold)
+        LinkLabel2.LinkColor = Color.White
+        LinkLabel2.Location = New Point(497, 367)
+        LinkLabel2.Name = "LinkLabel2"
+        LinkLabel2.Size = New Size(47, 20)
+        LinkLabel2.TabIndex = 5
+        LinkLabel2.TabStop = True
+        LinkLabel2.Text = "Login"
         ' 
         ' Form1
         ' 
@@ -1086,5 +1114,7 @@ Partial Class Form1
     Friend WithEvents Label29 As Label
     Friend WithEvents cmbInfoAdequate As ComboBox
     Friend WithEvents Label30 As Label
+    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents LinkLabel2 As LinkLabel
 
 End Class
