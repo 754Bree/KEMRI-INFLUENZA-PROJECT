@@ -22,18 +22,18 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         TabControl1 = New TabControl()
         TabPage1 = New TabPage()
+        Label31 = New Label()
+        btnSignupHome = New Button()
+        btnLoginHome = New Button()
         DateTimePicker1 = New DateTimePicker()
-        Button1 = New Button()
         Label2 = New Label()
         Label1 = New Label()
         TabPage2 = New TabPage()
         Button6 = New Button()
         GroupBox1 = New GroupBox()
-        Label30 = New Label()
-        Label6 = New Label()
-        Label5 = New Label()
         Label4 = New Label()
         Label3 = New Label()
         Button2 = New Button()
@@ -104,8 +104,6 @@ Partial Class Form1
         Label25 = New Label()
         Button11 = New Button()
         Button10 = New Button()
-        LinkLabel1 = New LinkLabel()
-        LinkLabel2 = New LinkLabel()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
         TabPage2.SuspendLayout()
@@ -138,10 +136,10 @@ Partial Class Form1
         ' TabPage1
         ' 
         TabPage1.BackColor = SystemColors.MenuHighlight
-        TabPage1.Controls.Add(LinkLabel2)
-        TabPage1.Controls.Add(LinkLabel1)
+        TabPage1.Controls.Add(Label31)
+        TabPage1.Controls.Add(btnSignupHome)
+        TabPage1.Controls.Add(btnLoginHome)
         TabPage1.Controls.Add(DateTimePicker1)
-        TabPage1.Controls.Add(Button1)
         TabPage1.Controls.Add(Label2)
         TabPage1.Controls.Add(Label1)
         TabPage1.Location = New Point(4, 26)
@@ -150,6 +148,39 @@ Partial Class Form1
         TabPage1.Size = New Size(968, 511)
         TabPage1.TabIndex = 0
         TabPage1.Text = "Home"
+        ' 
+        ' Label31
+        ' 
+        Label31.AutoSize = True
+        Label31.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label31.ForeColor = Color.White
+        Label31.Location = New Point(491, 368)
+        Label31.Name = "Label31"
+        Label31.Size = New Size(21, 17)
+        Label31.TabIndex = 8
+        Label31.Text = "or"
+        ' 
+        ' btnSignupHome
+        ' 
+        btnSignupHome.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
+        btnSignupHome.ForeColor = SystemColors.MenuHighlight
+        btnSignupHome.Location = New Point(399, 358)
+        btnSignupHome.Name = "btnSignupHome"
+        btnSignupHome.Size = New Size(75, 36)
+        btnSignupHome.TabIndex = 7
+        btnSignupHome.Text = "Signup"
+        btnSignupHome.UseVisualStyleBackColor = True
+        ' 
+        ' btnLoginHome
+        ' 
+        btnLoginHome.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
+        btnLoginHome.ForeColor = SystemColors.MenuHighlight
+        btnLoginHome.Location = New Point(527, 358)
+        btnLoginHome.Name = "btnLoginHome"
+        btnLoginHome.Size = New Size(75, 36)
+        btnLoginHome.TabIndex = 6
+        btnLoginHome.Text = "Login"
+        btnLoginHome.UseVisualStyleBackColor = True
         ' 
         ' DateTimePicker1
         ' 
@@ -160,23 +191,12 @@ Partial Class Form1
         DateTimePicker1.Size = New Size(200, 25)
         DateTimePicker1.TabIndex = 3
         ' 
-        ' Button1
-        ' 
-        Button1.Font = New Font("Segoe UI Light", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = SystemColors.HotTrack
-        Button1.Location = New Point(847, 478)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(75, 26)
-        Button1.TabIndex = 2
-        Button1.Text = "Begin"
-        Button1.UseVisualStyleBackColor = True
-        ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(276, 276)
+        Label2.Location = New Point(309, 280)
         Label2.Name = "Label2"
         Label2.Size = New Size(352, 30)
         Label2.TabIndex = 1
@@ -187,7 +207,7 @@ Partial Class Form1
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(126, 206)
+        Label1.Location = New Point(155, 233)
         Label1.Name = "Label1"
         Label1.Size = New Size(670, 47)
         Label1.TabIndex = 0
@@ -218,9 +238,6 @@ Partial Class Form1
         ' 
         ' GroupBox1
         ' 
-        GroupBox1.Controls.Add(Label30)
-        GroupBox1.Controls.Add(Label6)
-        GroupBox1.Controls.Add(Label5)
         GroupBox1.Controls.Add(Label4)
         GroupBox1.Controls.Add(Label3)
         GroupBox1.FlatStyle = FlatStyle.Popup
@@ -232,50 +249,23 @@ Partial Class Form1
         GroupBox1.TabStop = False
         GroupBox1.Text = "About the program"
         ' 
-        ' Label30
-        ' 
-        Label30.AutoSize = True
-        Label30.Location = New Point(29, 78)
-        Label30.Name = "Label30"
-        Label30.Size = New Size(89, 30)
-        Label30.TabIndex = 4
-        Label30.Text = "Label30"
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(20, 197)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(0, 17)
-        Label6.TabIndex = 3
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(6, 154)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(138, 20)
-        Label5.TabIndex = 2
-        Label5.Text = "Research Objective"
-        ' 
         ' Label4
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(20, 80)
+        Label4.Location = New Point(34, 106)
         Label4.Name = "Label4"
-        Label4.Size = New Size(0, 17)
+        Label4.Size = New Size(750, 221)
         Label4.TabIndex = 1
+        Label4.Text = resources.GetString("Label4.Text")
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(6, 44)
+        Label3.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Location = New Point(34, 58)
         Label3.Name = "Label3"
-        Label3.Size = New Size(91, 20)
+        Label3.Size = New Size(98, 21)
         Label3.TabIndex = 0
         Label3.Text = "Study Focus"
         ' 
@@ -974,30 +964,6 @@ Partial Class Form1
         Button10.Text = "Back"
         Button10.UseVisualStyleBackColor = True
         ' 
-        ' LinkLabel1
-        ' 
-        LinkLabel1.AutoSize = True
-        LinkLabel1.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold)
-        LinkLabel1.LinkColor = Color.White
-        LinkLabel1.Location = New Point(396, 367)
-        LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(57, 20)
-        LinkLabel1.TabIndex = 4
-        LinkLabel1.TabStop = True
-        LinkLabel1.Text = "Signup"
-        ' 
-        ' LinkLabel2
-        ' 
-        LinkLabel2.AutoSize = True
-        LinkLabel2.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold)
-        LinkLabel2.LinkColor = Color.White
-        LinkLabel2.Location = New Point(497, 367)
-        LinkLabel2.Name = "LinkLabel2"
-        LinkLabel2.Size = New Size(47, 20)
-        LinkLabel2.TabIndex = 5
-        LinkLabel2.TabStop = True
-        LinkLabel2.Text = "Login"
-        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -1040,13 +1006,8 @@ Partial Class Form1
     Friend WithEvents TabPage5 As TabPage
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
@@ -1113,8 +1074,10 @@ Partial Class Form1
     Friend WithEvents chkAbstinence As CheckBox
     Friend WithEvents Label29 As Label
     Friend WithEvents cmbInfoAdequate As ComboBox
-    Friend WithEvents Label30 As Label
-    Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents LinkLabel2 As LinkLabel
+    Friend WithEvents btnSignupHome As Button
+    Friend WithEvents btnLoginHome As Button
+    Friend WithEvents Label31 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
 
 End Class

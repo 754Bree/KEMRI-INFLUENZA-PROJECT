@@ -117,4 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>The questionnaire supports a study investigating:
+
+How cultural, family socio-economic status, information sources, and social networks influence compliance to sexual abstinence.
+The target group is adolescent girls in Kisumu city.
+
+🎯 Research Objective
+
+The main goal is to:
+1. Develop conceptual and operational framework models that can be applied to empower adolescent girls.
+2. Help them make informed choices—whether to:
+         - Abstain from sex,
+         - Delay sexual debut, or
+         - Practice safer sex if sexually active.</value>
+  </data>
 </root>

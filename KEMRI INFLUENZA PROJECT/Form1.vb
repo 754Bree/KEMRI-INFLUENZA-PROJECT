@@ -8,7 +8,7 @@
     'Proceed and Begin Buttons
     '==========================
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
 
         If TabControl1.SelectedIndex < TabControl1.TabCount - 1 Then
             TabControl1.SelectedIndex += 1
@@ -97,35 +97,24 @@
         End If
     End Sub
 
-    Private Sub CheckBox6_CheckedChanged(sender As Object, e As EventArgs) Handles chkSexuality.CheckedChanged
+    '====================================================================================================
+    'Authentication buttons on homepage
+    '=======================================
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles btnLoginHome.Click
+        Dim loginForm As New LoginForm()
+        loginForm.Show()
+        Me.Hide()
 
     End Sub
 
-    Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles chkHealthWorker.CheckedChanged
+    Private Sub TabPage1_Click(sender As Object, e As EventArgs) Handles TabPage1.Click
 
     End Sub
 
-    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbPocketMoney.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub cmbEducation_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbEducation.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub TabPage2_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
-
-    End Sub
-
-    Private Sub Label30_Click(sender As Object, e As EventArgs) Handles Label30.Click
-
-    End Sub
-
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-
+    Private Sub btnSignupHome_Click(sender As Object, e As EventArgs) Handles btnSignupHome.Click
+        Dim signupForm As New SignupForm()
+        signupForm.Show()
+        Me.Hide()
     End Sub
 End Class

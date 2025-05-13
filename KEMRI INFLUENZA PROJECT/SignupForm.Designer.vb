@@ -42,13 +42,13 @@ Partial Class SignupForm
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI", 18F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(42, 74)
+        Label1.Location = New Point(136, 77)
         Label1.Name = "Label1"
-        Label1.Size = New Size(404, 30)
+        Label1.Size = New Size(184, 32)
         Label1.TabIndex = 0
-        Label1.Text = "KEMRI - CGHR : INFLUENZA PROGRAM"
+        Label1.Text = "Authentication"
         ' 
         ' Label2
         ' 
@@ -64,6 +64,8 @@ Partial Class SignupForm
         ' Label3
         ' 
         Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
+        Label3.ForeColor = Color.White
         Label3.Location = New Point(91, 166)
         Label3.Name = "Label3"
         Label3.Size = New Size(59, 15)
@@ -74,6 +76,8 @@ Partial Class SignupForm
         ' Label4
         ' 
         Label4.AutoSize = True
+        Label4.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
+        Label4.ForeColor = Color.White
         Label4.Location = New Point(89, 213)
         Label4.Name = "Label4"
         Label4.Size = New Size(58, 15)
@@ -83,6 +87,8 @@ Partial Class SignupForm
         ' Label5
         ' 
         Label5.AutoSize = True
+        Label5.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
+        Label5.ForeColor = Color.White
         Label5.Location = New Point(89, 256)
         Label5.Name = "Label5"
         Label5.Size = New Size(60, 15)
@@ -92,6 +98,8 @@ Partial Class SignupForm
         ' Label6
         ' 
         Label6.AutoSize = True
+        Label6.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
+        Label6.ForeColor = Color.White
         Label6.Location = New Point(89, 298)
         Label6.Name = "Label6"
         Label6.Size = New Size(36, 15)
@@ -101,6 +109,8 @@ Partial Class SignupForm
         ' Label7
         ' 
         Label7.AutoSize = True
+        Label7.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
+        Label7.ForeColor = Color.White
         Label7.Location = New Point(91, 334)
         Label7.Name = "Label7"
         Label7.Size = New Size(57, 15)
@@ -110,9 +120,11 @@ Partial Class SignupForm
         ' Label8
         ' 
         Label8.AutoSize = True
+        Label8.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
+        Label8.ForeColor = Color.White
         Label8.Location = New Point(89, 387)
         Label8.Name = "Label8"
-        Label8.Size = New Size(104, 15)
+        Label8.Size = New Size(103, 15)
         Label8.TabIndex = 7
         Label8.Text = "Confirm Password"
         ' 

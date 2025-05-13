@@ -34,13 +34,13 @@ Partial Class LoginForm
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI", 18F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(58, 145)
+        Label1.Location = New Point(164, 140)
         Label1.Name = "Label1"
-        Label1.Size = New Size(404, 30)
+        Label1.Size = New Size(184, 32)
         Label1.TabIndex = 0
-        Label1.Text = "KEMRI - CGHR : INFLUENZA PROGRAM"
+        Label1.Text = "Authentication"
         ' 
         ' Label2
         ' 

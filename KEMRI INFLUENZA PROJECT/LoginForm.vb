@@ -1,33 +1,50 @@
-﻿Public Class LoginForm
-    Private Sub LoginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+﻿Imports MySql.Data.MySqlClient
+Imports System.Runtime.Intrinsics.Arm
+Imports System.Security.Cryptography.SHA256
+Imports System.Text
 
+Public Class LoginForm
+    Dim connStr As String = "server=localhost;user id=root;password=root;database=kemriflu"
+
+    Private Function HashPassword(password As String) As String
+        Using sha256 As System.Security.Cryptography.SHA256 = System.Security.Cryptography.SHA256.Create()
+
+            Dim bytes As Byte() = Encoding.UTF8.GetBytes(password)
+            Dim hash As Byte() = sha256.ComputeHash(bytes)
+            Return BitConverter.ToString(hash).Replace("-", "").ToLower()
+
+        End Using
+    End Function
+
+    Public Sub SetUsername(username As String)
+        txtUsername.Text = username
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+        Dim query As String = "SELECT from users WHERE username = @username AND password_hash = @password"
+        Using conn As New MySqlConnection(connStr)
+            Using cmd As New MySqlCommand(query, conn)
+                cmd.Parameters.AddWithValue("@username", txtUsername.Text)
+                cmd.Parameters.AddWithValue("@password", HashPassword(txtPassword.Text))
 
-    End Sub
+                conn.Open()
+                Dim reader As MySqlDataReader = cmd.ExecuteReader()
+                If reader.HasRows Then
+                    MessageBox.Show("Login Successful!")
+                    '-==============================================
+                    'Redirection code to individual demographic form
+                    '===============================================
+                    Dim main As New Form1()
+                    main.Show()
+                    main.TabControl1.SelectedTab = main.TabPage2
+                    Me.Close()
+                Else
+                    MessageBox.Show("Invalid credentials!")
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+                End If
+            End Using
 
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
-    End Sub
-
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtUsername.TextChanged
-
-    End Sub
-
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles txtPassword.TextChanged
-
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+        End Using
 
     End Sub
 End Class
