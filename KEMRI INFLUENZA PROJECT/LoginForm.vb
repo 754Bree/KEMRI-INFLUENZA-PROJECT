@@ -21,7 +21,7 @@ Public Class LoginForm
     End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        Dim query As String = "SELECT from users WHERE username = @username AND password_hash = @password"
+        Dim query As String = "SELECT * FROM users WHERE username = @username AND password_hash = @password"
         Using conn As New MySqlConnection(connStr)
             Using cmd As New MySqlCommand(query, conn)
                 cmd.Parameters.AddWithValue("@username", txtUsername.Text)
@@ -30,6 +30,19 @@ Public Class LoginForm
                 conn.Open()
                 Dim reader As MySqlDataReader = cmd.ExecuteReader()
                 If reader.HasRows Then
+                    reader.Read()
+                    Dim userID As Integer = reader("ser_id")
+                    reader.Close()
+
+                    'Update activity column
+                    '=======================
+                    Dim updateActivityQuery As String = "UPDATE users SET activity = 1 WHERE user_id = @user_id"
+                    Using updateCmd As New MySqlCommand(updateActivityQuery, conn)
+
+                        updateCmd.Parameters.AddWithValue("@user_id", userID)
+                        updateCmd.ExecuteNonQuery()
+
+                    End Using
                     MessageBox.Show("Login Successful!")
                     '-==============================================
                     'Redirection code to individual demographic form
@@ -45,6 +58,10 @@ Public Class LoginForm
             End Using
 
         End Using
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub
 End Class

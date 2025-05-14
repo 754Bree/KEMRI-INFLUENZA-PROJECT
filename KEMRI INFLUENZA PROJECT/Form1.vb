@@ -1,4 +1,8 @@
 ﻿Public Class Form1
+
+    Public Property CurrentUserId As Integer
+
+    Private isLoggedIn As Boolean = False
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -108,13 +112,13 @@
 
     End Sub
 
-    Private Sub TabPage1_Click(sender As Object, e As EventArgs) Handles TabPage1.Click
-
-    End Sub
-
     Private Sub btnSignupHome_Click(sender As Object, e As EventArgs) Handles btnSignupHome.Click
         Dim signupForm As New SignupForm()
         signupForm.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
     End Sub
 End Class

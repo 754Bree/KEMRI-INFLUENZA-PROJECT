@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("KEMRI INFLUENZA PROJECT"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61d9d72e9979974645dbc578113cebf4d62669b3"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e477578d398569b663fe3fffbba51b3b0c1259f0"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("KEMRI INFLUENZA PROJECT"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("KEMRI INFLUENZA PROJECT"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

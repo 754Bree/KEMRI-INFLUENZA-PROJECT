@@ -35,3 +35,4 @@ V:\source\KEMRI INFLUENZA PROJECT\KEMRI INFLUENZA PROJECT\bin\Debug\net8.0-windo
 V:\source\KEMRI INFLUENZA PROJECT\KEMRI INFLUENZA PROJECT\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 V:\source\KEMRI INFLUENZA PROJECT\KEMRI INFLUENZA PROJECT\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 V:\source\KEMRI INFLUENZA PROJECT\KEMRI INFLUENZA PROJECT\obj\Debug\net8.0-windows\KEMRI IN.60FEA7E0.Up2Date
+V:\source\KEMRI INFLUENZA PROJECT\KEMRI INFLUENZA PROJECT\obj\Debug\net8.0-windows\KEMRI_INFLUENZA_PROJECT.Resources.resources

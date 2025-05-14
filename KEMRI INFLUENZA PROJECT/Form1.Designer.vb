@@ -32,6 +32,7 @@ Partial Class Form1
         Label2 = New Label()
         Label1 = New Label()
         TabPage2 = New TabPage()
+        Button12 = New Button()
         Button6 = New Button()
         GroupBox1 = New GroupBox()
         Label4 = New Label()
@@ -215,6 +216,7 @@ Partial Class Form1
         ' 
         ' TabPage2
         ' 
+        TabPage2.Controls.Add(Button12)
         TabPage2.Controls.Add(Button6)
         TabPage2.Controls.Add(GroupBox1)
         TabPage2.Controls.Add(Button2)
@@ -225,6 +227,15 @@ Partial Class Form1
         TabPage2.TabIndex = 1
         TabPage2.Text = "About the project"
         TabPage2.UseVisualStyleBackColor = True
+        ' 
+        ' Button12
+        ' 
+        Button12.Location = New Point(893, 0)
+        Button12.Name = "Button12"
+        Button12.Size = New Size(75, 28)
+        Button12.TabIndex = 7
+        Button12.Text = "Button12"
+        Button12.UseVisualStyleBackColor = True
         ' 
         ' Button6
         ' 
@@ -262,7 +273,7 @@ Partial Class Form1
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.Location = New Point(34, 58)
         Label3.Name = "Label3"
         Label3.Size = New Size(98, 21)
@@ -404,7 +415,7 @@ Partial Class Form1
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Font = New Font("Segoe UI Semibold", 18F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
+        Label7.Font = New Font("Segoe UI Semibold", 18.0F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = SystemColors.Highlight
         Label7.Location = New Point(44, 31)
         Label7.Name = "Label7"
@@ -525,7 +536,7 @@ Partial Class Form1
         ' Label13
         ' 
         Label13.AutoSize = True
-        Label13.Font = New Font("Segoe UI Semibold", 18F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
+        Label13.Font = New Font("Segoe UI Semibold", 18.0F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
         Label13.ForeColor = SystemColors.Highlight
         Label13.Location = New Point(48, 29)
         Label13.Name = "Label13"
@@ -716,7 +727,7 @@ Partial Class Form1
         ' Label17
         ' 
         Label17.AutoSize = True
-        Label17.Font = New Font("Segoe UI Semibold", 18F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
+        Label17.Font = New Font("Segoe UI Semibold", 18.0F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
         Label17.ForeColor = SystemColors.Highlight
         Label17.Location = New Point(57, 21)
         Label17.Name = "Label17"
@@ -938,7 +949,7 @@ Partial Class Form1
         ' Label25
         ' 
         Label25.AutoSize = True
-        Label25.Font = New Font("Segoe UI Semibold", 18F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
+        Label25.Font = New Font("Segoe UI Semibold", 18.0F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
         Label25.ForeColor = SystemColors.Highlight
         Label25.Location = New Point(57, 32)
         Label25.Name = "Label25"
@@ -966,7 +977,7 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(974, 538)
         Controls.Add(TabControl1)
@@ -1079,5 +1090,6 @@ Partial Class Form1
     Friend WithEvents Label31 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents Button12 As Button
 
 End Class

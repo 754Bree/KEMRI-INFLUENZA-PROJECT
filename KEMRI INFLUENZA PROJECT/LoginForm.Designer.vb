@@ -29,6 +29,8 @@ Partial Class LoginForm
         txtUsername = New TextBox()
         txtPassword = New TextBox()
         btnLogin = New Button()
+        PictureBox1 = New PictureBox()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
@@ -36,7 +38,7 @@ Partial Class LoginForm
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 18F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(164, 140)
+        Label1.Location = New Point(203, 137)
         Label1.Name = "Label1"
         Label1.Size = New Size(184, 32)
         Label1.TabIndex = 0
@@ -45,13 +47,13 @@ Partial Class LoginForm
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(230, 186)
+        Label2.Location = New Point(204, 179)
         Label2.Name = "Label2"
-        Label2.Size = New Size(51, 21)
+        Label2.Size = New Size(107, 15)
         Label2.TabIndex = 1
-        Label2.Text = "Login"
+        Label2.Text = "Existing user login"
         ' 
         ' Label3
         ' 
@@ -100,12 +102,21 @@ Partial Class LoginForm
         btnLogin.Text = "Login"
         btnLogin.UseVisualStyleBackColor = True
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Location = New Point(43, 57)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(146, 137)
+        PictureBox1.TabIndex = 7
+        PictureBox1.TabStop = False
+        ' 
         ' LoginForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.MenuHighlight
         ClientSize = New Size(534, 471)
+        Controls.Add(PictureBox1)
         Controls.Add(btnLogin)
         Controls.Add(txtPassword)
         Controls.Add(txtUsername)
@@ -116,6 +127,7 @@ Partial Class LoginForm
         Name = "LoginForm"
         RightToLeftLayout = True
         Text = "Login-:"
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -127,4 +139,5 @@ Partial Class LoginForm
     Friend WithEvents txtUsername As TextBox
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents btnLogin As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

@@ -37,6 +37,8 @@ Partial Class SignupForm
         txtSignupPassword = New TextBox()
         txtConfirmPassword = New TextBox()
         txtFirstname = New TextBox()
+        PictureBox1 = New PictureBox()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
@@ -44,7 +46,7 @@ Partial Class SignupForm
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 18F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(136, 77)
+        Label1.Location = New Point(217, 91)
         Label1.Name = "Label1"
         Label1.Size = New Size(184, 32)
         Label1.TabIndex = 0
@@ -53,20 +55,20 @@ Partial Class SignupForm
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(185, 118)
+        Label2.Location = New Point(219, 136)
         Label2.Name = "Label2"
-        Label2.Size = New Size(61, 21)
+        Label2.Size = New Size(141, 17)
         Label2.TabIndex = 1
-        Label2.Text = "Signup"
+        Label2.Text = "New user registration"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         Label3.ForeColor = Color.White
-        Label3.Location = New Point(91, 166)
+        Label3.Location = New Point(93, 225)
         Label3.Name = "Label3"
         Label3.Size = New Size(59, 15)
         Label3.TabIndex = 2
@@ -78,7 +80,7 @@ Partial Class SignupForm
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         Label4.ForeColor = Color.White
-        Label4.Location = New Point(89, 213)
+        Label4.Location = New Point(91, 272)
         Label4.Name = "Label4"
         Label4.Size = New Size(58, 15)
         Label4.TabIndex = 3
@@ -89,7 +91,7 @@ Partial Class SignupForm
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         Label5.ForeColor = Color.White
-        Label5.Location = New Point(89, 256)
+        Label5.Location = New Point(91, 315)
         Label5.Name = "Label5"
         Label5.Size = New Size(60, 15)
         Label5.TabIndex = 4
@@ -100,7 +102,7 @@ Partial Class SignupForm
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         Label6.ForeColor = Color.White
-        Label6.Location = New Point(89, 298)
+        Label6.Location = New Point(91, 357)
         Label6.Name = "Label6"
         Label6.Size = New Size(36, 15)
         Label6.TabIndex = 5
@@ -111,7 +113,7 @@ Partial Class SignupForm
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         Label7.ForeColor = Color.White
-        Label7.Location = New Point(91, 334)
+        Label7.Location = New Point(91, 398)
         Label7.Name = "Label7"
         Label7.Size = New Size(57, 15)
         Label7.TabIndex = 6
@@ -122,7 +124,7 @@ Partial Class SignupForm
         Label8.AutoSize = True
         Label8.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold)
         Label8.ForeColor = Color.White
-        Label8.Location = New Point(89, 387)
+        Label8.Location = New Point(91, 441)
         Label8.Name = "Label8"
         Label8.Size = New Size(103, 15)
         Label8.TabIndex = 7
@@ -130,7 +132,7 @@ Partial Class SignupForm
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(185, 431)
+        Button1.Location = New Point(187, 490)
         Button1.Name = "Button1"
         Button1.Size = New Size(75, 33)
         Button1.TabIndex = 8
@@ -139,45 +141,53 @@ Partial Class SignupForm
         ' 
         ' txtLastname
         ' 
-        txtLastname.Location = New Point(215, 205)
+        txtLastname.Location = New Point(217, 264)
         txtLastname.Name = "txtLastname"
         txtLastname.Size = New Size(174, 23)
         txtLastname.TabIndex = 9
         ' 
         ' txtUsername
         ' 
-        txtUsername.Location = New Point(217, 248)
+        txtUsername.Location = New Point(219, 307)
         txtUsername.Name = "txtUsername"
         txtUsername.Size = New Size(172, 23)
         txtUsername.TabIndex = 10
         ' 
         ' txtEmail
         ' 
-        txtEmail.Location = New Point(215, 290)
+        txtEmail.Location = New Point(217, 349)
         txtEmail.Name = "txtEmail"
         txtEmail.Size = New Size(174, 23)
         txtEmail.TabIndex = 11
         ' 
         ' txtSignupPassword
         ' 
-        txtSignupPassword.Location = New Point(217, 331)
+        txtSignupPassword.Location = New Point(219, 390)
         txtSignupPassword.Name = "txtSignupPassword"
         txtSignupPassword.Size = New Size(172, 23)
         txtSignupPassword.TabIndex = 12
         ' 
         ' txtConfirmPassword
         ' 
-        txtConfirmPassword.Location = New Point(217, 379)
+        txtConfirmPassword.Location = New Point(217, 433)
         txtConfirmPassword.Name = "txtConfirmPassword"
         txtConfirmPassword.Size = New Size(172, 23)
         txtConfirmPassword.TabIndex = 13
         ' 
         ' txtFirstname
         ' 
-        txtFirstname.Location = New Point(215, 163)
+        txtFirstname.Location = New Point(217, 222)
         txtFirstname.Name = "txtFirstname"
         txtFirstname.Size = New Size(174, 23)
         txtFirstname.TabIndex = 14
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Location = New Point(44, 39)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(146, 144)
+        PictureBox1.TabIndex = 15
+        PictureBox1.TabStop = False
         ' 
         ' SignupForm
         ' 
@@ -185,7 +195,8 @@ Partial Class SignupForm
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.MenuHighlight
-        ClientSize = New Size(489, 509)
+        ClientSize = New Size(489, 551)
+        Controls.Add(PictureBox1)
         Controls.Add(txtFirstname)
         Controls.Add(txtConfirmPassword)
         Controls.Add(txtSignupPassword)
@@ -203,6 +214,7 @@ Partial Class SignupForm
         Controls.Add(Label1)
         Name = "SignupForm"
         Text = "Signup-:"
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -222,4 +234,5 @@ Partial Class SignupForm
     Friend WithEvents txtSignupPassword As TextBox
     Friend WithEvents txtConfirmPassword As TextBox
     Friend WithEvents txtFirstname As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
