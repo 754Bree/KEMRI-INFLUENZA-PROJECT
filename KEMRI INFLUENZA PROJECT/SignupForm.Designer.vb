@@ -22,6 +22,7 @@ Partial Class SignupForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SignupForm))
         Label1 = New Label()
         Label2 = New Label()
         Label3 = New Label()
@@ -183,9 +184,10 @@ Partial Class SignupForm
         ' 
         ' PictureBox1
         ' 
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
         PictureBox1.Location = New Point(44, 39)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(146, 144)
+        PictureBox1.Size = New Size(146, 137)
         PictureBox1.TabIndex = 15
         PictureBox1.TabStop = False
         ' 
@@ -213,6 +215,7 @@ Partial Class SignupForm
         Controls.Add(Label2)
         Controls.Add(Label1)
         Name = "SignupForm"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Signup-:"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)

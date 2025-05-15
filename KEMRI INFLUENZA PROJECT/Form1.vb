@@ -121,4 +121,12 @@
     Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
 
     End Sub
+
+    Private Sub GroupBox5_Enter(sender As Object, e As EventArgs) Handles GroupBox5.Enter
+
+    End Sub
+
+    Private Sub txtAge_TextChanged(sender As Object, e As EventArgs) Handles txtAge.TextChanged
+
+    End Sub
 End Class

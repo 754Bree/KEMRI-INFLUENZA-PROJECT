@@ -31,7 +31,7 @@ Public Class LoginForm
                 Dim reader As MySqlDataReader = cmd.ExecuteReader()
                 If reader.HasRows Then
                     reader.Read()
-                    Dim userID As Integer = reader("ser_id")
+                    Dim userID As Integer = reader("user_id")
                     reader.Close()
 
                     'Update activity column
@@ -61,7 +61,5 @@ Public Class LoginForm
 
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
-    End Sub
 End Class

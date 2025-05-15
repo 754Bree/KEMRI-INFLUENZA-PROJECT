@@ -22,6 +22,7 @@ Partial Class LoginForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoginForm))
         Label1 = New Label()
         Label2 = New Label()
         Label3 = New Label()
@@ -104,6 +105,7 @@ Partial Class LoginForm
         ' 
         ' PictureBox1
         ' 
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
         PictureBox1.Location = New Point(43, 57)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(146, 137)
@@ -126,6 +128,7 @@ Partial Class LoginForm
         Controls.Add(Label1)
         Name = "LoginForm"
         RightToLeftLayout = True
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Login-:"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
