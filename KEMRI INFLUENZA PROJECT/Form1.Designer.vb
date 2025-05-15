@@ -103,7 +103,7 @@ Partial Class Form1
         cmbReproductiveHealthAccess = New ComboBox()
         Label26 = New Label()
         Label25 = New Label()
-        Button11 = New Button()
+        btnSubmit = New Button()
         Button10 = New Button()
         TabControl1.SuspendLayout()
         TabPage1.SuspendLayout()
@@ -757,7 +757,7 @@ Partial Class Form1
         ' 
         TabPage6.Controls.Add(GroupBox5)
         TabPage6.Controls.Add(Label25)
-        TabPage6.Controls.Add(Button11)
+        TabPage6.Controls.Add(btnSubmit)
         TabPage6.Controls.Add(Button10)
         TabPage6.Location = New Point(4, 26)
         TabPage6.Name = "TabPage6"
@@ -957,14 +957,14 @@ Partial Class Form1
         Label25.TabIndex = 2
         Label25.Text = "Sexual Education Demographic Data"
         ' 
-        ' Button11
+        ' btnSubmit
         ' 
-        Button11.Location = New Point(887, 484)
-        Button11.Name = "Button11"
-        Button11.Size = New Size(75, 23)
-        Button11.TabIndex = 1
-        Button11.Text = "Submit"
-        Button11.UseVisualStyleBackColor = True
+        btnSubmit.Location = New Point(887, 484)
+        btnSubmit.Name = "btnSubmit"
+        btnSubmit.Size = New Size(75, 23)
+        btnSubmit.TabIndex = 1
+        btnSubmit.Text = "Submit"
+        btnSubmit.UseVisualStyleBackColor = True
         ' 
         ' Button10
         ' 
@@ -1028,7 +1028,7 @@ Partial Class Form1
     Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
     Friend WithEvents Button9 As Button
-    Friend WithEvents Button11 As Button
+    Friend WithEvents btnSubmit As Button
     Friend WithEvents Button10 As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents GroupBox2 As GroupBox
