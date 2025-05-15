@@ -118,15 +118,31 @@
         Me.Hide()
     End Sub
 
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+    '==========================
+    'Form Validations
+    '================
 
-    End Sub
-
-    Private Sub GroupBox5_Enter(sender As Object, e As EventArgs) Handles GroupBox5.Enter
-
-    End Sub
-
+    'I.D.D.F
+    '=======
     Private Sub txtAge_TextChanged(sender As Object, e As EventArgs) Handles txtAge.TextChanged
+        'Empty Textbox
+        If txtAge.Text <> "" Then
+            Dim age As Integer
 
+            'Check if input is a valid number
+            If Integer.TryParse(txtAge.Text, age) Then
+                'Validate age range
+                If age < 15 OrElse age > 19 Then
+                    MessageBox.Show("Allowed Range : 15 to 19!")
+                    txtAge.Clear()
+                    txtAge.Focus()
+
+                End If
+            Else
+                MessageBox.Show("Enter valid age.")
+                txtAge.Clear()
+                txtAge.Focus()
+            End If
+        End If
     End Sub
 End Class
